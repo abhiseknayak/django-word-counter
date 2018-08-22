@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>count</title>
+
+
+  </head>
+  <body>
+    <a href="{% url 'home' %}">Back To Home</a>
+    <h1>There are {{words}} words in your Text</h1>
+
+    <h1>Your Text was :</h1>
+    {{fulltext}}
+
+    <h1>The word count is :</h1>
+    {% for c,v in diction %}
+      {{c}} :
+      {{v}}<br>
+    {% endfor %}
+
+
+
+  </body>
+</html>
